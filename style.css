@@ -1,0 +1,12 @@
+p {
+  margin: 0;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 20px;
+  align-content: normal;
+  justify-content: center;
+  color: black;
+  background-color: yellow;
+}
