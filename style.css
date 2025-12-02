@@ -1,15 +1,6 @@
 p {
   margin: 0;
 }
-.grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  gap: 20px;
-  align-content: normal;
-  justify-content: center;
-  color: black;
-  background-color: yellow;
-}
 
 .grid-wrapper {
   display: grid;
@@ -20,4 +11,14 @@ p {
     "header header"
     "main main"
     "footer footer";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
