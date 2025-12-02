@@ -22,3 +22,19 @@ main {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: normal;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.flex-wrapper > div {
+  flex-grow: 10;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: yellow;
+}
