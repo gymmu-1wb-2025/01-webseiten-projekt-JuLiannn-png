@@ -15,19 +15,31 @@ p {
 
 footer {
   font-family: Helvetica, sans-serif;
+  color: white;
 }
 
 main {
   font-family: Helvetica, sans-serif;
+  color: white;
 }
 
 header {
   font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+aside {
+  font-family: Helvetica, sans-serif;
+  color: white;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-image: url("https://cdn.wallpapersafari.com/33/42/Avc0xl.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
@@ -49,4 +61,8 @@ main {
   flex-shrink: 1;
   flex-basis: auto;
   background-color: yellow;
+}
+
+.titel {
+  background-color: aqua;
 }
