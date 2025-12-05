@@ -60,9 +60,11 @@ main {
   flex-grow: 10;
   flex-shrink: 1;
   flex-basis: auto;
-  background-color: yellow;
+  background-color: gold;
+  color: black;
 }
 
 .titel {
   background-color: aqua;
+  color: black;
 }
