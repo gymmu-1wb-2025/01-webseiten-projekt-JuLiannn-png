@@ -57,11 +57,11 @@ main {
 }
 
 .flex-wrapper > div {
-  flex-grow: 10;
-  flex-shrink: 1;
-  flex-basis: auto;
   background-color: gold;
   color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 .titel {
