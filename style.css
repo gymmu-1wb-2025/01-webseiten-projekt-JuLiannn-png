@@ -32,6 +32,10 @@ aside {
   font-family: Helvetica, sans-serif;
   color: white;
 }
+nav {
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
 
 body {
   margin: 0;
@@ -71,4 +75,11 @@ main {
 
 .center-image {
   text-align: center;
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
 }
