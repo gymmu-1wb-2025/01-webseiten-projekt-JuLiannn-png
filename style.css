@@ -8,7 +8,7 @@ p {
   grid-template-columns: 1fr 200px;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header header"
+    "header nav"
     "main aside"
     "footer footer";
 }
