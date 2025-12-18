@@ -98,6 +98,6 @@ a:visited {
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header nav"
-    "main main"
+    "main aside"
     "footer footer";
 }
