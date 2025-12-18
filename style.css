@@ -22,6 +22,8 @@ main {
   font-family: Helvetica, sans-serif;
   color: white;
   padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 header {
@@ -47,11 +49,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-main {
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .flex-wrapper {
@@ -100,4 +97,15 @@ a:visited {
     "header nav"
     "main aside"
     "footer footer";
+}
+
+.color-list {
+  list-style: none;
+  padding: 0;
+}
+.color-list > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
 }
