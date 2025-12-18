@@ -1,11 +1,8 @@
-let counter = 0;
+let count = 0;
 
-function createNewElement() {
-  let newElement = document.createElement("p");
-  counter = counter + 1;
-
-  newElement.textContent = "Element" + counter;
-
-  let mainElement = document.querySelector("main");
-  mainElement.appendChild(newElement);
+function increaseCount() {
+  let timer = document.querySelector("#timer");
+  count = count + 1;
+  timer.textContent = count;
 }
+setInterval(increaseCount, 2000);
