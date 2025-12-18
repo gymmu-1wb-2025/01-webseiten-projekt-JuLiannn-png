@@ -21,16 +21,19 @@ footer {
 main {
   font-family: Helvetica, sans-serif;
   color: white;
+  padding: 1rem;
 }
 
 header {
   font-family: Helvetica, sans-serif;
   color: white;
+  padding: 1rem;
 }
 
 aside {
   font-family: Helvetica, sans-serif;
   color: white;
+  padding: 1rem;
 }
 nav {
   font-family: Helvetica, sans-serif;
