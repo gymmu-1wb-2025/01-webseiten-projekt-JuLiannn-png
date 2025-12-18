@@ -87,3 +87,14 @@ a:visited {
 .icon-1 {
   fill: aqua;
 }
+
+.second-grid-wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header nav"
+    "main main"
+    "footer footer";
+}
