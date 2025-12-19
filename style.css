@@ -101,6 +101,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  justify-content: center;
 }
 .color-list > li {
   display: flex;
@@ -112,4 +113,6 @@ a:visited {
 
 .svg-blue circle {
   fill: aqua;
+  text-align: center;
+  align-items: center;
 }
