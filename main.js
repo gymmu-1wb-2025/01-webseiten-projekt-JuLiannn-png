@@ -5,4 +5,4 @@ function increaseCount() {
   count = count + 1;
   timer.textContent = count;
 }
-setInterval(increaseCount, 2000);
+setInterval(increaseCount, 1000);
