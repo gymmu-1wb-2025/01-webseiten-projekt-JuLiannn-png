@@ -39,6 +39,8 @@ aside {
   font-family: Helvetica, sans-serif;
   color: white;
   padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 nav {
   font-family: Helvetica, sans-serif;
@@ -72,7 +74,7 @@ body {
 }
 
 .titel {
-  background-color: aqua;
+  background-color: gold;
   color: black;
 }
 
@@ -104,7 +106,7 @@ a:visited {
 }
 
 .svg-blue circle {
-  fill: aqua;
+  fill: gold;
   text-align: center;
   align-items: center;
 }
