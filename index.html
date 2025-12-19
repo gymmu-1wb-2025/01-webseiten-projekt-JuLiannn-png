@@ -5,37 +5,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eigene Webseite</title>
-
+    <!--Auf css und Java-Script verlinkt-->
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
   </head>
+  <!--Einteilung des Bodys in ein layout-->
+  <body class="grid-wrapper">
+    <!--Start header und Header in grid Vorlage-->
+    <header style="grid-area: header">
+      <!--Haubtitel H1 gross-->
+      <h1>Grogu</h1>
+      <!--zeigt Timeran, auf den Java-script code verlinken-->
+      <p id="timer">0</p>
+      <!--Start Navigationsleiste-->
+      <nav>
+        <!--ul auf css code verlinken, layout der Liste-->
+        <ul class="color-list">
+          <li>
+            <!--link auf unterseite-->
+            <a href="./unterseiten/mando.html">
+              <!--Icon Kreis und verlinkung zu css code für farbe-->
+              <svg class="Icon-1" viewbox="0 0 10 10" width="1.5em">
+                <circle cx="5" cy="5" r="3"/>
+              </svg><!--Ende svg-->
+              Mandolorian
+            </a><!--Ende a (für links)-->
+          </li><!--Ende listenpunkt-->
+          <li><!--link auf Unterseite-->
+            <a href="./unterseiten/macht.html">
+              <!--Icon Dreieck und verlinkung auf css code für farbe-->
+              <svg class="Icon-1" viewBox="0 0 10 10" width="1.5em">
+                <path
+                  d="
+                M2 8
+                L5 2
+                L8 8
+                Z"
+                />
+              </svg>
+              Macht
+            </a>
+          </li>
+        </ul><!--Ende punktierte Liste-->
+      </nav><!--Ende Navigations-->
+    </header><!--Ende header-->
 
-  <body>
-    <header>
-      <h1>Webseite von ...</h1>
-    </header>
+    <aside style="grid-area: aside"><!--Start Aside und in grid Vorlage-->
+      <h2 class="titel">Grogu</h2><!--kleinerer Titel-->
+      <div class="center-image"><!--verlinkung auf css-->
+        <!---Bildlink mit Bildformat einstellungen-->
+        <img
+          src="https://4kwallpapers.com/images/wallpapers/grogu-baby-yoda-the-2560x1080-10853.jpg"
+          alt="Bild Grogu"
+          width="170"
+          height="80"
+        >
+      </div>
+      <h3 class="titel">
+        Beschreibung
+      </h3><!--Titel kleiner als H2 und verlinkung auf Css-->
+      <p>
+        Spezies: Yodas Spezies
+      </p><!--Text abschnitte, p startet immer neue Zeile-->
+      <p>Geschlecht: Männlich</p>
+      <p>Hautfarbe: Grün</p>
+      <p>Haarfarbe: Weiss, hellgrau</p>
+      <p>Körpergrösse: 0.34 Meter</p>
 
-    <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
+      <h3 class="titel">Biografische Daten</h3>
+      <p>Geburtsdatum: Ca.41 VSY</p>
+      <p>Heimat: Coruscant</p>
+      <p>Titel: Jedi-Jüngling</p>
+    </aside><!--Ende Aside-->
 
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
-
-      <section>
-        <h2>Unterseiten verlinken</h2>
+    <main style="grid-area: main"><!--Start Main und verlinkung auf grid Vorlage-->
+      <section><!--Texte in Abschnitte einteilen-->
+        <h2>Themen</h2>
+        <ul>
+          <li>
+            <a href="#Wer"
+              >Wer ist Grogu</a
+            ><!--verlinkung auf eine Id in einer section-->
+          </li>
+          <li>
+            <a href="#Kräfte">Kräfte und Fähigkeiten</a>
+          </li>
+          <li>
+            <a href="#Hobbys">Hobbys und Vorlieben</a>
+          </li>
+          <li>
+            <a href="#Hintergrund">Hintergrund</a>
+          </li>
+        </ul>
+      </section><!--Ende section-->
+      <section id="Wer"><!--verlinkung für Liste, start section-->
+        <h2>Wer ist Grogu</h2><!--Titel mittelgross-->
+        <p>Grogu ist eine Figur aus der Star Wars Serie The Mandolorian.</p>
         <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
+          Er gehört zu gleichen geheimnisvollen Spezies wie der Jedi-Meister
+          Yoda selbst.
+        </p>
+        <p>
+          Obwohl er aussieht wie ein Baby, ist Grogu schon etwa 50 Jahre alt, da
+          seine Spezies sehr langsam altert.Grogu ist ein neugieriges,
+          großäugiges Junges, etwa 0,34 Meter groß, mit grüner Haut, langen
+          Ohren, die seine Gefühle zeigen, und ein paar weißen Haarsträhnen auf
+          seinem runzligen Kopf. Er trägt weite Roben mit Taschen, in denen er
+          kleine Gegenstände wie seinen Lieblings-Steuerknauf oder Eier
+          aufbewahrt. Nachdem er sich für die Rückkehr zum Clan Mudhorn
+          entscheidet, trägt er unter seinen Roben ein Kettenhemd.
+        </p>
+      </section><!--ende section-->
+
+      <section d="Kräfte"><!--Link zu Nav und Link zu Unterseite. Text in section und in p-->
+        <h2>Kräfte und Fähigkeiten</h2>
+        <p>
+          Grogu hat eine starke Verbindung zur
+          <a href="./unterseiten/macht.html">Macht</a>.
+        </p>
+        <p>
+          Er kann mit der Macht Dinge bewegen, sich beschützen oder anderen
+          helfen. Doch weil er noch jung ist, braucht er danach oft eine Pause
+          oder schläft ein.
+        </p>
+        <p>
+          Während seines Trainings bei Luke Skywalker verfeinerte Grogu seine
+          Machtfähigkeiten weiter. Er nutzte die Macht, um seine Reflexe zu
+          verbessern und große Sprünge zu machen, die für jemanden seiner Größe
+          beeindruckend waren. Außerdem zeigte er die Fähigkeit, Kreaturen zu
+          beruhigen und zu zähmen - etwa den wütenden Rancor in Mos Espa, den er
+          erfolgreich besänftigte. Danach war Grogu so erschöpft, dass er neben
+          dem Rancor einschlief.
+        </p>
+
+        <div class="flex-wrapper"><!--flex Boxen-->
+          <div>Machttelekinese</div>
+          <div>Machtheilung</div>
+          <div>Macht Schutzschild</div>
+          <div>Empathische Verbindung zu Lebewesen</div>
+          <div>Kommunikationsfähigkeit über die Macht</div>
+        </div>
+      </section>
+
+      <section id="Hobbys"><!--verlinkung zu nav und Link zu unterseiten, Text in Section un p-->
+        <h2>Hobbys und Vorlieben</h2>
+        <p>
+          Grogu liebt es, mit kleinen Gegenständen zu spielen - besonders mit
+          silbernen Kugeln oder Knöpfen. Er isst gerne Froschwesen (auch wenn
+          das manchmal eklig aussieht) und mag es, bei Mando zu sein, seinem
+          Beschützer und Freund
+          <a href="./unterseiten/mando.html">Mandolorian.</a>
+        </p>
+      </section>
+
+      <section id="Hintergrund">
+        <h2>Hintergrund</h2>
+        <p>
+          Grogu gehört zu einer geheimnisvollen, seltenen Spezies, über die
+          selbst im Star-Wars-Universum kaum etwas bekannt ist. Mitglieder
+          dieser Art - darunter Yoda und Yaddle - sind außergewöhnlich
+          machtsensitiv und altern extrem langsam. Obwohl Grogu etwa fünfzig
+          Jahre alt ist, befindet er sich körperlich und geistig noch im
+          Kleinkindalter. Seine Art entwickelt sich über Jahrhunderte hinweg,
+          was erklärt, warum Grogu trotz seines hohen Alters noch nicht sprechen
+          kann und kindliche Verhaltensweisen zeigt.
+        </p>
+        <h3>Frühe Jahre im Jedi-Tempel</h3>
+        <p>
+          Grogu wächst im Jedi-Tempel auf Coruscant auf. Dort wird er von
+          mehreren Jedi-Meistern unterrichtet und betreut, bis die Order 66
+          ausgerufen wird. Während die Klontruppen den Tempel angreifen, wird
+          Grogu heimlich gerettet - bis heute ist nicht bekannt, wer ihn genau
+          in Sicherheit gebracht hat. Diese traumatische Erfahrung hinterlässt
+          tiefe Spuren in ihm. Viele seiner Erinnerungen an diese Zeit sind
+          verschwommen oder von Angst überdeckt.
+        </p>
+        <p>
+          Grogu lebt danach jahrzehntelang verborgen. Verschiedene Gruppen oder
+          Personen scheinen ihn zeitweise versteckt oder gefangen gehalten zu
+          haben, doch Details sind unklar.
         </p>
       </section>
     </main>
 
-    <footer>Meine Webseite</footer>
-  </body>
+    <footer style="grid-area: footer">
+      Meine Webseite
+    </footer><!--Vorlage footer-->
+  </body><!--ende Inhalt Seite-->
 </html>

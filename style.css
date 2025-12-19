@@ -1,0 +1,113 @@
+/*abstand zwischen Text*/
+p {
+  margin: 0;
+}
+/*aufteilung grid-layout*/
+.grid-wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+}
+/*schrift und Farbe in Footer*/
+footer {
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+/* Schrift,Farbe,abstand des Randes des Textes in main und Schiebebalken*/
+main {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* Schrift,Farbe, Abstand am Rand, Abstand zwischen Texten in header*/
+header {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+/*Schrift, farbe, Schiebebalken Aside*/
+aside {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/*nav Schrift und Farbe*/
+nav {
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+/* body Hintergrundbild und Formation*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://cdn.wallpapersafari.com/33/42/Avc0xl.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Flex Box Formations (Reihe,Abstand zwischen Boxen)*/
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: normal;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+/*Flex Box Farben, Text Farbe, Abstand von Text, Rundung der Boxen*/
+.flex-wrapper > div {
+  background-color: gold;
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+/*Titel Farbe und Hintergrundfarbe*/
+.titel {
+  background-color: gold;
+  color: black;
+}
+/*Bildformation*/
+.center-image {
+  text-align: center;
+}
+/* alle links in a sind weiss und nach dem man sie besucht hat auch weiss*/
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+/*Listen formtion und abstand*/
+.color-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+/*alle li formation und abstand, Pfeil wird zu Pointer auf Link*/
+.color-list > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+}
+/*Icon farbe Gold*/
+.Icon-1 {
+  fill: gold;
+}
