@@ -5,28 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eigene Webseite</title>
-
+    <!--Auf css und Java-Script verlinkt-->
     <link rel="stylesheet" href="style.css">
     <script src="./main.js" defer></script>
   </head>
   <!--Einteilung des Bodys in ein layout-->
   <body class="grid-wrapper">
+    <!--Start header und Header in grid Vorlage-->
     <header style="grid-area: header">
+      <!--Haubtitel H1 gross-->
       <h1>Grogu</h1>
-
+      <!--zeigt Timeran, auf den Java-script code verlinken-->
       <p id="timer">0</p>
+      <!--Start Navigationsleiste-->
       <nav>
+        <!--ul auf css code verlinken, layout der Liste-->
         <ul class="color-list">
-          <li class="svg-blue">
+          <li>
+            <!--link auf unterseite-->
             <a href="./unterseiten/mando.html">
+              <!--Icon Kreis und verlinkung zu css code für farbe-->
               <svg class="Icon-1" viewbox="0 0 10 10" width="1.5em">
                 <circle cx="5" cy="5" r="3"/>
-              </svg>
+              </svg><!--Ende svg-->
               Mandolorian
-            </a>
-          </li>
-          <li>
+            </a><!--Ende a (für links)-->
+          </li><!--Ende listenpunkt-->
+          <li><!--link auf Unterseite-->
             <a href="./unterseiten/macht.html">
+              <!--Icon Dreieck und verlinkung auf css code für farbe-->
               <svg class="Icon-1" viewBox="0 0 10 10" width="1.5em">
                 <path
                   d="
@@ -39,13 +46,14 @@
               Macht
             </a>
           </li>
-        </ul>
-      </nav>
-    </header>
+        </ul><!--Ende punktierte Liste-->
+      </nav><!--Ende Navigations-->
+    </header><!--Ende header-->
 
-    <aside style="grid-area: aside">
-      <h2 class="titel">Grogu</h2>
-      <div class="center-image">
+    <aside style="grid-area: aside"><!--Start Aside und in grid Vorlage-->
+      <h2 class="titel">Grogu</h2><!--kleinerer Titel-->
+      <div class="center-image"><!--verlinkung auf css-->
+        <!---Bildlink mit Bildformat einstellungen-->
         <img
           src="https://4kwallpapers.com/images/wallpapers/grogu-baby-yoda-the-2560x1080-10853.jpg"
           alt="Bild Grogu"
@@ -53,8 +61,12 @@
           height="80"
         >
       </div>
-      <h3 class="titel">Beschreibung</h3>
-      <p>Spezies: Yodas Spezies</p>
+      <h3 class="titel">
+        Beschreibung
+      </h3><!--Titel kleiner als H2 und verlinkung auf Css-->
+      <p>
+        Spezies: Yodas Spezies
+      </p><!--Text abschnitte, p startet immer neue Zeile-->
       <p>Geschlecht: Männlich</p>
       <p>Hautfarbe: Grün</p>
       <p>Haarfarbe: Weiss, hellgrau</p>
@@ -64,14 +76,16 @@
       <p>Geburtsdatum: Ca.41 VSY</p>
       <p>Heimat: Coruscant</p>
       <p>Titel: Jedi-Jüngling</p>
-    </aside>
+    </aside><!--Ende Aside-->
 
-    <main style="grid-area: main">
-      <section>
+    <main style="grid-area: main"><!--Start Main und verlinkung auf grid Vorlage-->
+      <section><!--Texte in Abschnitte einteilen-->
         <h2>Themen</h2>
         <ul>
           <li>
-            <a href="#Wer">Wer ist Grogu</a>
+            <a href="#Wer"
+              >Wer ist Grogu</a
+            ><!--verlinkung auf eine Id in einer section-->
           </li>
           <li>
             <a href="#Kräfte">Kräfte und Fähigkeiten</a>
@@ -83,9 +97,9 @@
             <a href="#Hintergrund">Hintergrund</a>
           </li>
         </ul>
-      </section>
-      <section id="Wer">
-        <h2>Wer ist Grogu</h2>
+      </section><!--Ende section-->
+      <section id="Wer"><!--verlinkung für Liste, start section-->
+        <h2>Wer ist Grogu</h2><!--Titel mittelgross-->
         <p>Grogu ist eine Figur aus der Star Wars Serie The Mandolorian.</p>
         <p>
           Er gehört zu gleichen geheimnisvollen Spezies wie der Jedi-Meister
@@ -101,9 +115,9 @@
           aufbewahrt. Nachdem er sich für die Rückkehr zum Clan Mudhorn
           entscheidet, trägt er unter seinen Roben ein Kettenhemd.
         </p>
-      </section>
+      </section><!--ende section-->
 
-      <section d="Kräfte">
+      <section d="Kräfte"><!--Link zu Nav und Link zu Unterseite. Text in section und in p-->
         <h2>Kräfte und Fähigkeiten</h2>
         <p>
           Grogu hat eine starke Verbindung zur
@@ -124,7 +138,7 @@
           dem Rancor einschlief.
         </p>
 
-        <div class="flex-wrapper">
+        <div class="flex-wrapper"><!--flex Boxen-->
           <div>Machttelekinese</div>
           <div>Machtheilung</div>
           <div>Macht Schutzschild</div>
@@ -133,7 +147,7 @@
         </div>
       </section>
 
-      <section id="Hobbys">
+      <section id="Hobbys"><!--verlinkung zu nav und Link zu unterseiten, Text in Section un p-->
         <h2>Hobbys und Vorlieben</h2>
         <p>
           Grogu liebt es, mit kleinen Gegenständen zu spielen - besonders mit
@@ -174,6 +188,8 @@
       </section>
     </main>
 
-    <footer style="grid-area: footer">Meine Webseite</footer>
-  </body>
+    <footer style="grid-area: footer">
+      Meine Webseite
+    </footer><!--Vorlage footer-->
+  </body><!--ende Inhalt Seite-->
 </html>

@@ -1,3 +1,4 @@
+/*Lässt Zahl (Timer) steigen im Sekundentakt (+1)*/
 let count = 0;
 
 function increaseCount() {

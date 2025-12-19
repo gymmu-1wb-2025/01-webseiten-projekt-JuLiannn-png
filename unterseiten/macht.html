@@ -6,13 +6,14 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../style.css">
+    <script src="./main.js" defer></script>
   </head>
-  <body class="grid-wrapper">
-    <header style="grid-area: header">
+  <body class="grid-wrapper"><!--aufteilung in Layout-->
+    <header style="grid-area: header"><!--Timer anzeigen, grosser Titel-->
       <h1>Macht</h1>
       <p id="timer">0</p>
     </header>
-    <aside style="grid-area: aside">
+    <aside style="grid-area: aside"><!--Liste mit Haubtseiten link, Abschnittlinks und Unterseite, Icons Haus und Kreis-->
       <nav>
         <ul class="color-list">
           <li>
@@ -34,9 +35,9 @@
               Home</a
             >
           </li>
-          <li class="svg-blue">
+          <li>
             <a href="./mando.html">
-              <svg viewBox="0 0 10 10" width="1.5em">
+              <svg class="Icon-1" viewBox="0 0 10 10" width="1.5em">
                 <circle cx="5" cy="5" r="3"/>
               </svg>
               Mando</a
@@ -60,7 +61,7 @@
         </ul>
       </nav>
     </aside>
-    <main style="grid-area: main">
+    <main style="grid-area: main"><!--main in grid Vorlage und  hat Text in sections und p und Bilder, section verlinkt zu Liste-->
       <section id="was">
         <h2>Was ist die Macht? </h2>
         <p>
